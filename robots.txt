@@ -42,5 +42,5 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://krivoshein-slon.sourcecraft.site/drslon-card/sitemap.xml
+Sitemap: https://krivoi.web.firsts3.ru/sitemap.xml
 # LLM context: https://krivoshein-slon.sourcecraft.site/drslon-card/llms.txt
