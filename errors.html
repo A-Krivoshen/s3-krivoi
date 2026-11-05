@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru" data-theme="night" data-theme-mode="auto">
+<head>
+  <meta charset="UTF-8">
+  <title>Страница не найдена | Алексей Кривошеин</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050b10" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#e8f2ee" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="dark light">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Такого адреса на визитке нет.">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css?v=20260817">
+  <script>
+    (function () {
+      try {
+        var mode = localStorage.getItem('drslon-theme-mode') || 'auto';
+        var hour = new Date().getHours();
+        var theme = mode === 'auto' ? (hour >= 7 && hour < 20 ? 'day' : 'night') : mode;
+        document.documentElement.dataset.themeMode = ['auto', 'day', 'night'].includes(mode) ? mode : 'auto';
+        document.documentElement.dataset.theme = theme === 'day' ? 'day' : 'night';
+      } catch (error) {}
+      try {
+        var lang = localStorage.getItem('site-language');
+        if (lang !== 'en' && lang !== 'ru') {
+          var nav = (navigator.language || '').toLowerCase();
+          lang = nav.indexOf('ru') === 0 ? 'ru' : 'en';
+        }
+        document.documentElement.lang = lang;
+      } catch (e3) {}
+    }());
+  </script>
+</head>
+<body class="page-home" data-current-lang="ru" data-title-ru="Страница не найдена | Алексей Кривошеин" data-title-en="Page not found | Alexey Krivoshein">
+  <canvas class="matrix-canvas" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main-content"><span class="lang-ru">К содержанию</span><span class="lang-en">Skip to content</span></a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">
+        <img class="brand-photo" src="/assets/alexey-tech.webp" alt="" width="46" height="46" decoding="async">
+        <span class="brand-copy">
+          <span class="brand-name">Кривошеин Алексей</span>
+          <span class="brand-role"><span class="lang-ru">systems / web / automation</span><span class="lang-en">systems / web / automation</span></span>
+        </span>
+      </a>
+      <div class="nav-wrap">
+        <nav class="site-nav" id="mainNav" aria-label="Основная навигация">
+          <a class="nav-link" href="/index.html"><span class="lang-ru">Главная</span><span class="lang-en">Home</span></a>
+          <a class="nav-link" href="/index.html#services"><span class="lang-ru">Услуги</span><span class="lang-en">Services</span></a>
+          <a class="nav-link" href="/index.html#cases"><span class="lang-ru">Кейсы</span><span class="lang-en">Cases</span></a>
+          <a class="nav-link" href="/resume.html"><span class="lang-ru">Резюме</span><span class="lang-en">Resume</span></a>
+          <a class="nav-link" href="https://krivoshein.site/blog/" target="_blank" rel="noopener noreferrer"><span class="lang-ru">Блог</span><span class="lang-en">Blog</span></a>
+          <a class="nav-link" href="/contact.html"><span class="lang-ru">Контакты</span><span class="lang-en">Contact</span></a>
+        </nav>
+        <div class="header-tools">
+          <div class="language-switch" role="group" aria-label="Выбор языка">
+            <button class="lang-btn is-active" type="button" data-lang="ru" aria-pressed="true">RU</button>
+            <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <div class="theme-switch" role="group" aria-label="Режим темы">
+            <button class="theme-btn" type="button" data-theme-mode="auto" aria-pressed="false" aria-label="Автоматическая тема"><span>AUTO</span></button>
+            <button class="theme-btn" type="button" data-theme-mode="day" aria-pressed="false" aria-label="Дневная тема"><span>DAY</span></button>
+            <button class="theme-btn" type="button" data-theme-mode="night" aria-pressed="false" aria-label="Ночная тема"><span>NIGHT</span></button>
+          </div>
+          <span class="theme-status" data-theme-status aria-live="polite">AUTO</span>
+          <button class="burger" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Открыть навигацию"><span></span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="lang-ru">404 · визитка</span><span class="lang-en">404 · card</span></span>
+        <h1>
+          <span class="lang-ru">Такой страницы <span class="accent-word">нет.</span></span>
+          <span class="lang-en">This page <span class="accent-word">is not here.</span></span>
+        </h1>
+        <p class="hero-lead">
+          <span class="lang-ru">Адреса в визитке нет. Откройте главную или контакты.</span>
+          <span class="lang-en">This address is not on the card. Open the home page or the contacts.</span>
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="/index.html"><span class="lang-ru">На главную</span><span class="lang-en">Home</span><span class="arrow">↗</span></a>
+          <a class="button button-secondary" href="/contact.html"><span class="lang-ru">Контакты</span><span class="lang-en">Contact</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> / built for humans and machines</span>
+      <span>
+        <a href="mailto:aleksey@krivoshein.site">aleksey@krivoshein.site</a> ·
+        <a href="tel:+79636641615">+7 963 664-16-15</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js?v=20260817"></script>
+</body>
+</html>
